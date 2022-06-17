@@ -24,34 +24,35 @@ header {
   padding: 20px;
   background-color: #333;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
   position: fixed;
 }
 
 header a {
-  color: #737380;
+  color: var(--bs-indigo)
 }
 
 header a:hover {
-  color: var(--bs-indigo);
   transition: all .4s ease-out;
+  color: blueviolet;
 }
 
-#first-floor {
+#first__floor {
   display: flex;
   justify-content: space-evenly;
   justify-items: center;
   height: 100vh;
   width: 100%;
   align-items: center;
-  padding-bottom: 100px;
 }
 
 #image img {
   width: 550px;
   height: 550px;
   border-radius: 50%;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 5px 5px rgba(0, 0, 0, 0);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 5px 5px rgba(0, 0, 0, 0);
 }
 
 #infos {
@@ -89,23 +90,16 @@ p {
   color: var(--bs-indigo);
 }
 
-#second--floor {
+#second__floor {
   display: flex;
   background-color: var(--bs-indigo);
-  height: 70vh;
+  height: 75vh;
   z-index: 1;
   align-items: center;
   justify-content: center;
 }
 
-.rodape {
-  text-align: center;
-  padding: 5px;
-  color: var(--bs-gray-400);
-  background-color: rgb(51, 51, 51);
-}
-
-.cards {
+.cards__technology {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -114,7 +108,7 @@ p {
   align-items: stretch;
 }
 
-.card--container {
+.card__container {
   flex: 1;
   text-align: center;
   box-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
@@ -123,7 +117,7 @@ p {
   border-radius: 10px;
 }
 
-.card--title {
+.card__title {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -134,18 +128,18 @@ p {
   border-bottom: 1px solid var(--bs-indigo);
 }
 
-.card--content {
+.card__content {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.card--content a {
-  color: var(--bs-white);
+.card__content a {
+  color: var(--bs-gray-400);
   text-decoration: none;
 }
 
-.card--technology {
+.card__technology {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -153,7 +147,62 @@ p {
   padding: 8px;
 }
 
-.card--technology:hover {
+.card__technology:hover {
   transition: all .2s ease-out;
-  color: var(--bs-green)
+  color: var(--bs-white);
+  font-weight: 700;
+}
+
+#third__floor {
+  padding: 50px;
+  height: 60vh;
+}
+
+#third__floor h2 {
+  text-align: center;
+  color: var(--bs-indigo)
+}
+
+.cards__projects {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  text-align: center;
+  color: var(--bs-black);
+}
+
+.card__projects {
+  padding: 15px;
+  
+}
+
+.card__projects:hover p {
+  color: white;
+}
+
+.card__projects:hover {
+  background: #000000;
+  z-index: 1;
+  transition: all 1s ease-out;
+  border-radius: 2rem;
+}
+
+.cards__projects p {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.card__projects img {
+  width: 200px;
+  height: 200px;
+}
+
+.rodape {
+  text-align: center;
+  padding: 5px;
+  color: var(--bs-gray-400);
+  font-size: 16px;
+  bottom: 0;
 }
