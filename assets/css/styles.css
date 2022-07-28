@@ -1,18 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* No--Identity */
+
 html {
   scroll-behavior: smooth;
   font-family: Roboto, sans-serif;
-}
-
-#container {
-  width: 100vw;
-  height: 100vh;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(0deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(34, 34, 34, 1) 100%);
-  overflow-x: hidden;
 }
 
 header {
@@ -37,22 +29,46 @@ header a:hover {
   transition: all .4s ease-out;
   color: blueviolet;
 }
+ul {
+  padding-left: 0 !important;
+}
+
+
+/* ID's */
+#container {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(34, 34, 34, 1) 100%);
+  overflow-x: hidden;
+}
+
+#container ul {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin: 5px;
+}
+
+#container li {
+  list-style: none;
+}
 
 #first__floor {
   display: flex;
   justify-content: space-evenly;
   justify-items: center;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   align-items: center;
 }
 
 #image img {
-  width: 550px;
-  height: 550px;
-  border-radius: 50%;
-  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 5px 5px rgba(0, 0, 0, 0);
-  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 5px 5px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: -10px 0px 13px -7px #0000008e, 10px 0px 13px -7px #0000008e, 5px 5px 5px 5px #0000008e;
+  box-shadow: -10px 0px 13px -7px #0000008e, 10px 0px 13px -7px #0000008e, 5px 5px 5px 5px #0000008e;
+  border-radius: 2rem;
 }
 
 #infos {
@@ -61,33 +77,24 @@ header a:hover {
   text-align: center;
   line-height: 1.5;
 }
+#infos p {
+  margin: auto 200px;
 
-#infos img {
-  width: 50px;
 }
 
-#infos p,
-h2 {
-  margin: 0px;
-}
-
-.hards {
+#infos>ul {
   display: flex;
-  gap: 10px;
   justify-content: center;
-  margin-top: 10px;
-  border-top: 1px solid white;
-  padding: 10px;
+  gap: 20px;
 }
 
 #infos h2,
 p {
   color: var(--bs-gray-400);
+  margin: 0px;
 }
-
-.nome {
-  font-weight: 700;
-  color: var(--bs-indigo);
+#infos p{
+  margin-bottom: 5px;
 }
 
 #second__floor {
@@ -98,6 +105,35 @@ p {
   align-items: center;
   justify-content: center;
 }
+
+#third__floor {
+  padding: 50px;
+  height: 60vh;
+}
+
+#third__floor h2 {
+  text-align: center;
+  color: var(--bs-indigo)
+}
+
+
+/* Classes */
+
+.hards {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+  border-top: 1px solid white;
+  padding: 10px;
+}
+
+.nome {
+  font-weight: 700;
+  color: var(--bs-indigo);
+}
+
+
 
 .cards__technology {
   display: flex;
@@ -153,15 +189,7 @@ p {
   font-weight: 700;
 }
 
-#third__floor {
-  padding: 50px;
-  height: 60vh;
-}
 
-#third__floor h2 {
-  text-align: center;
-  color: var(--bs-indigo)
-}
 
 .cards__projects {
   display: flex;
@@ -174,7 +202,7 @@ p {
 
 .card__projects {
   padding: 15px;
-  
+
 }
 
 .card__projects:hover p {
