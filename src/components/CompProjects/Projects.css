@@ -1,0 +1,80 @@
+.project_presentation {
+  width: 880px;
+  margin: 0 auto;
+}
+.project_presentation_card {
+  margin-bottom: 40px;
+}
+.project_presentation_card img {
+  width: 880px;
+  position: relative;
+  border-radius: 0.6rem;
+}
+.project_presentation_card_description h4 {
+  color: #f05353;
+  font-size: 1.802rem;
+  line-height: 2.566rem;
+  margin-bottom: 16px;
+}
+.project_presentation_card_description p {
+  color: #f69999;
+  margin-bottom: 26px;
+  font-size: 14px;
+  line-height: 1.9rem;
+}
+.project_presentation_anchor {
+  margin: 64px 0;
+}
+.project_presentation_anchor a {
+  min-height: 40px;
+  padding: 10px;
+  background-color: #fafafa;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #eaeaea;
+  border-radius: 100px;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: bold;
+  background-color: #242424;
+  border-color: #363636;
+  color: #f05353;
+}
+.project_presentation_anchor a:hover {
+  background-color: #292929;
+}
+@media (min-width: 375px) {
+  @media (max-width: 424px) {
+    .project_presentation_card {
+      width: 350px;
+    }
+    .project_presentation_card img {
+      width: 350px;
+    }
+  }
+}
+
+@media (min-width: 425px) {
+  @media (max-width: 768px) {
+    .project_presentation {
+      width: 400px;
+    }
+    .project_presentation_card img {
+      width: 400px;
+    }
+  }
+}
+@media (min-width: 769px) {
+  @media (max-width: 1024px) {
+    .project_presentation {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 680px;
+    }
+    .project_presentation_card img {
+      width: 680px;
+      margin: 0 auto;
+    }
+  }
+}

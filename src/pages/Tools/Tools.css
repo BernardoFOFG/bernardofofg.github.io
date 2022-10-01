@@ -1,0 +1,128 @@
+.container_tools {
+  width: 880px;
+  margin: 40px auto;
+}
+.tools {
+  width: 100%;
+}
+.tools_title h1 {
+  margin-bottom: 16px;
+  font-size: 3.653rem;
+  line-height: 5.202rem;
+  color: #f05353;
+}
+.tools_subtitle p {
+  color: #f69999;
+  font-size: 1.125rem;
+  line-height: 2.566rem;
+}
+.tools_languages h2,
+.tools_editor h2 {
+  color: #f05353;
+  font-size: 1.802rem;
+  line-height: 2.566rem;
+}
+.tools_languages p,
+.tools_editor p {
+  color: #f69999;
+  font-size: 14px;
+  line-height: 1.9rem;
+}
+.tools_cardGroup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: stretch;
+  margin-top: 20px;
+}
+.tools_card {
+  flex: 0 1 calc(33.333% - 16px);
+  overflow: hidden;
+  margin-bottom: 32px;
+  border: 1px solid #eaeaea;
+  border-color: #363636;
+  border-radius: 8px;
+}
+.tools_card:nth-child(3n-1) {
+  margin-right: 24px;
+  margin-left: 24px;
+}
+.tools_card_img {
+  display: block;
+  width: 100%;
+  padding: 32px 0;
+  background-color: #f6f6f6;
+  text-align: center;
+  background-color: #242424;
+}
+.tools_card_img img {
+  margin: 0 auto;
+  max-width: 80px;
+  border-radius: 16px;
+  filter: brightness(0.8) contrast(1.2);
+}
+.tools_card:hover img {
+  filter: brightness(1) contrast(1);
+}
+
+.tools_card_text {
+  padding: 24px;
+  text-align: center;
+  color: #f69999;
+}
+.tools_card:hover .tools_card_text {
+  color: #f05353;
+}
+
+@media (min-width: 768px) {
+  @media (max-width: 1024px) {
+    .container_tools {
+      margin: 40px auto;
+      width: 500px;
+    }
+  }
+}
+@media (min-width: 426px) {
+  @media (max-width: 768px) {
+    .container_tools {
+      width: 400px;
+      margin: 40px auto;
+    }
+  }
+  .tools_title h1 {
+    font-size: 2.8rem !important;
+    line-height: 5rem !important;
+  }
+  .tools_subtitle p {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+  .tools_card {
+    width: 300px;
+  }
+}
+@media (min-width: 375px) {
+  @media (max-width: 425px) {
+    .container_tools {
+      width: 350px;
+      margin: 40px auto;
+    }
+    .tools_cardGroup {
+      flex-direction: column;
+      align-items: center;
+    }
+    .tools_title h1 {
+      font-size: 2.8rem !important;
+      line-height: 5rem !important;
+    }
+    .tools_subtitle p {
+      font-size: 14px;
+      line-height: 1.5rem;
+    }
+    .tools_card {
+      width: 300px;
+    }
+  }
+}

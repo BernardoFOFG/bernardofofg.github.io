@@ -1,0 +1,7 @@
+hr {
+  background: url(../../images/line.svg);
+  height: 6px;
+  border: none;
+  width: 100%;
+  margin: 64px 0;
+}
