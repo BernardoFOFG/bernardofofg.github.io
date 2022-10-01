@@ -1,9 +1,4 @@
 {
-<<<<<<< HEAD
-  "dependencies": {
-    "bootstrap": "^5.2.0-beta1"
-  }
-=======
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -54,5 +49,4 @@
   "keywords": [],
   "author": "",
   "license": "ISC"
->>>>>>> V.2
 }
