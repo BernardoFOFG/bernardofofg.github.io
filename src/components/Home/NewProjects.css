@@ -1,0 +1,35 @@
+.second_floor_card {
+  border: 1px solid #242424;
+  border-radius: 0.8rem;
+
+  background-color: #1e1e1e;
+
+  margin-top: 32px;
+}
+.second_floor_card a {
+  display: flex;
+  gap: 1rem;
+  padding: 32px;
+}
+.second_floor_card a:hover {
+  background-color: #2b2b2b;
+
+  border-radius: 0.8rem;
+}
+.second_floor_card_logo img {
+  max-width: 64px;
+  border-radius: 8px;
+}
+
+.second_floor_card_infos h3 {
+  font-size: 18px;
+  color: #f05353;
+
+  margin-bottom: 4px;
+}
+.second_floor_card_infos p {
+  font-size: 14px;
+  color: #f69999;
+
+  line-height: 1.9rem;
+}

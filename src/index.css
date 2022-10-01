@@ -1,0 +1,23 @@
+/* 
+Principais cores: 
+Titulo, Hover/Ativo: #f05353
+SubTitulo, paragrafos e afins: f69999
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background: #111111;
+  font-family: "Noto Sans Mono", monospace;
+  width: 100vw;
+  overflow-x: hidden;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}

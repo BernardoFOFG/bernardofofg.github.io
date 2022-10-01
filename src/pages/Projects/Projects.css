@@ -1,0 +1,55 @@
+.container_projects {
+  max-width: 880px;
+  margin: 40px auto;
+}
+
+.project_title h1 {
+  color: #f05353;
+  font-size: 3.653rem;
+  line-height: 5.202rem;
+
+  margin-bottom: 20px;
+}
+.project_subtitle p {
+  color: #f69999;
+  font-size: 16px;
+  line-height: 1.9rem;
+}
+@media (min-width: 375px) {
+  @media (max-width: 424px) {
+    .container_projects {
+      width: 350px;
+    }
+    .project_title h1 {
+      font-size: 2rem !important;
+      line-height: 5rem !important;
+    }
+    .project_subtitle p {
+      font-size: 14px;
+      line-height: 1.5rem;
+    }
+  }
+}
+@media (min-width: 425px) {
+  @media (max-width: 768px) {
+    .container_projects {
+      width: 400px;
+      margin: 40px auto;
+    }
+  }
+  .project_title h1 {
+    font-size: 2.5rem !important;
+    line-height: 5rem !important;
+  }
+  .project_subtitle p {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+}
+@media (min-width: 769px) {
+  @media (max-width: 1024px) {
+    .container_projects {
+      width: 680px;
+    }
+  }
+}
