@@ -43,8 +43,8 @@
 .project_presentation_anchor a:hover {
   background-color: #292929;
 }
-@media (min-width: 375px) {
-  @media (max-width: 424px) {
+@media (min-width: 374px) {
+  @media (max-width: 410px) {
     .project_presentation_card {
       width: 350px;
     }
@@ -53,18 +53,28 @@
     }
   }
 }
-
-@media (min-width: 425px) {
-  @media (max-width: 768px) {
+@media (min-width: 360px) {
+  @media (max-width: 424px) {
     .project_presentation {
-      width: 400px;
+      width: 300px;
     }
-    .project_presentation_card img {
-      width: 400px;
+    .project_presentation_card img{
+      width: 300px;
     }
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 425px) {
+  @media (max-width: 768px) {
+    .project_presentation {
+      width: 350px;
+      margin: 0 auto;
+    }
+    .project_presentation_card img {
+      width: 350px;
+    }
+  }
+}
+@media (min-width: 768px) {
   @media (max-width: 1024px) {
     .project_presentation {
       display: flex;

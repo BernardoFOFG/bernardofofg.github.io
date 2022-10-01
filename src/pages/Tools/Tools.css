@@ -87,7 +87,7 @@
 @media (min-width: 426px) {
   @media (max-width: 768px) {
     .container_tools {
-      width: 400px;
+      width: 500px;
       margin: 40px auto;
     }
   }
@@ -103,7 +103,7 @@
     width: 300px;
   }
 }
-@media (min-width: 375px) {
+@media (min-width: 360px) {
   @media (max-width: 425px) {
     .container_tools {
       width: 350px;
