@@ -46,3 +46,10 @@
   transition: 0.6s;
   border-radius: 0.2rem;
 }
+@media (min-width: 320px) {
+  @media(max-width: 768px) {
+    .social {
+      flex-direction: column;
+    }
+  }
+}
