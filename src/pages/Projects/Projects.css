@@ -1,6 +1,7 @@
 .container_projects {
   max-width: 880px;
   margin: 40px auto;
+  overflow-x: hidden;
 }
 
 .project_title h1 {

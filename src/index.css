@@ -8,12 +8,14 @@ SubTitulo, paragrafos e afins: f69999
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  overflow-x: hidden;
+}
 html,
 body {
   background: #111111;
   font-family: "Noto Sans Mono", monospace;
   width: 100vw;
-  overflow-x: hidden;
 }
 li {
   list-style: none;

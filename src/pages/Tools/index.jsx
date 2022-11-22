@@ -84,6 +84,24 @@ const Tools = () => {
                 </div>
                 <div className="tools_card_text">PHP</div>
               </a>
+              <a href="#" className="tools_card">
+                <div className="tools_card_img">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                    alt="TypeScript Logo"
+                  />
+                </div>
+                <div className="tools_card_text">TypeScript</div>
+              </a>
+              <a href="#" className="tools_card">
+                <div className="tools_card_img">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                    alt="NodeJs Logo"
+                  />
+                </div>
+                <div className="tools_card_text">Node.js</div>
+              </a>
             </div>
           </div>
           <div className="tools_editor">
