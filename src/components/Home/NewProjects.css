@@ -16,6 +16,10 @@
 
   border-radius: 0.8rem;
 }
+.second_floor_card_logo {
+  display: flex;
+  align-items: center;
+}
 .second_floor_card_logo img {
   max-width: 64px;
   border-radius: 8px;

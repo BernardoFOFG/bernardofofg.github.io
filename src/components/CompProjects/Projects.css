@@ -14,11 +14,11 @@
   color: #f05353;
   font-size: 1.802rem;
   line-height: 2.566rem;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 .project_presentation_card_description p {
   color: #f69999;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.9rem;
 }
@@ -27,12 +27,12 @@
 }
 .project_presentation_anchor a {
   min-height: 40px;
-  padding: 10px;
+  padding: 16px 12px;
   background-color: #fafafa;
   border-width: 1px;
   border-style: solid;
   border-color: #eaeaea;
-  border-radius: 100px;
+  border-radius: 16px;
   font-size: 1rem;
   line-height: 1rem;
   font-weight: bold;
