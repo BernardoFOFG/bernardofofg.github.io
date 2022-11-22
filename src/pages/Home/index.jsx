@@ -5,6 +5,7 @@ import Header from "../../components/Header/index.jsx";
 import SocialMedia from "../../components/Home/Social.jsx";
 import NewProjects from "../../components/Home/NewProjects.jsx";
 import noLogo from "../../images/no-logo.png";
+import IacLogo from '../../images/Logo_IAC.svg'
 
 const Home = () => {
   return (
@@ -53,7 +54,7 @@ const Home = () => {
 
           <NewProjects
             link="https://github.com/suelensalvino/IAC"
-            img={<img src={noLogo} alt="noLogo" />}
+            img={<img src={IacLogo} alt="noLogo" />}
             titleinfo="IFPE Acess Control(IAC)"
             subtitleinfo="Project that will be developed during the second period in the course of Project and Development I."
           />
