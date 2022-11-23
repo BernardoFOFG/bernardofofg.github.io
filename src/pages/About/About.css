@@ -8,7 +8,7 @@
   margin-top: 40px;
 }
 .profile img {
-  max-width: 440px;
+  max-width: 100vw;
   border-radius: 0.4rem;
 }
 
@@ -79,11 +79,14 @@
     margin: 32px;
   }
 }
-@media (min-width: 375px) {
+@media (min-width: 320px) {
   .work_descriptions {
     gap: 40px;
   }
   .profile_text {
     margin: auto 20px;
+  }
+  .profile img {
+    border-radius: 2px;
   }
 }
