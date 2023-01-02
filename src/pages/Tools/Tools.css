@@ -18,13 +18,15 @@
   line-height: 2.566rem;
 }
 .tools_languages h2,
-.tools_editor h2 {
+.tools_editor h2,
+.tools_extras h2 {
   color: #f05353;
   font-size: 1.802rem;
   line-height: 2.566rem;
 }
 .tools_languages p,
-.tools_editor p {
+.tools_editor p,
+.tools_extras p {
   color: #f69999;
   font-size: 14px;
   line-height: 1.9rem;

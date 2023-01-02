@@ -2,15 +2,12 @@
 import React from "react";
 import "./About.css";
 
-import Header from "../../components/Header/index.jsx";
 import Linha from "../../components/Linha/index.jsx";
-
 import Profile from "../../images/Profile-Bernardo.jpg";
 
 const About = () => {
   return (
     <>
-      <Header />
       <div className="container_about">
         <div className="profile">
           <img src={Profile} alt="Profile Bernardo" />

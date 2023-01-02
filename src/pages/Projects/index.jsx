@@ -1,6 +1,5 @@
 import React from "react";
 
-import Header from "../../components/Header/index.jsx";
 import Linha from "../../components/Linha/index.jsx";
 import CompProjects from "../../components/CompProjects/index.jsx";
 
@@ -8,7 +7,6 @@ import "./Projects.css";
 const Projects = () => {
   return (
     <>
-      <Header />
       <main className="container_projects">
         <div className="project_title">
           <h1>Projects</h1>

@@ -1,16 +1,13 @@
 import React from "react";
 import "./Home.css";
 
-import Header from "../../components/Header/index.jsx";
 import SocialMedia from "../../components/Home/Social.jsx";
 import NewProjects from "../../components/Home/NewProjects.jsx";
-import noLogo from "../../images/no-logo.png";
 import IacLogo from '../../images/Logo_IAC.svg'
 
 const Home = () => {
   return (
     <>
-      <Header />
       <main className="container_home">
         <section className="first_floor">
           <h1>Front-end developer in constant evolution and learning!</h1>

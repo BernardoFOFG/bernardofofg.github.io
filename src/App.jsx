@@ -7,10 +7,12 @@ import Projects from "./pages/Projects";
 import Tools from "./pages/Tools";
 
 import "./App.css";
+import Header from "./components/Header";
 
 export default function App() {
   return (
     <Router>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
