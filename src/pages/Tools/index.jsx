@@ -3,11 +3,12 @@
 import React from "react";
 import "./Tools.css";
 import Linha from "../../components/Linha/index.jsx";
+import { motion } from "framer-motion";
 
 const Tools = () => {
   return (
     <>
-      <main className="container_tools">
+      <motion.main className="container_tools">
         <div className="tools">
           <div className="tools_title">
             <h1>Tools</h1>
@@ -190,7 +191,7 @@ const Tools = () => {
             </div>
           </div>
         </div>
-      </main>
+      </motion.main>
     </>
   );
 };

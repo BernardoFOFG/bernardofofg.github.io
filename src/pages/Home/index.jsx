@@ -4,11 +4,14 @@ import "./Home.css";
 import SocialMedia from "../../components/Home/Social.jsx";
 import NewProjects from "../../components/Home/NewProjects.jsx";
 import IacLogo from '../../images/Logo_IAC.svg'
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
     <>
-      <main className="container_home">
+      <motion.main className="container_home"  intial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}>
         <section className="first_floor">
           <h1>Front-end developer in constant evolution and learning!</h1>
           <div className="first_floor_infos">
@@ -56,7 +59,7 @@ const Home = () => {
             subtitleinfo="Project that will be developed during the second period in the course of Project and Development I."
           />
         </section>
-      </main>
+      </motion.main>
     </>
   );
 };

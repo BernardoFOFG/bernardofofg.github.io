@@ -4,11 +4,17 @@ import "./About.css";
 
 import Linha from "../../components/Linha/index.jsx";
 import Profile from "../../images/Profile-Bernardo.jpg";
+import { motion } from "framer-motion"
 
 const About = () => {
   return (
     <>
-      <div className="container_about">
+      <motion.div
+        className="container_about"
+        intial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
         <div className="profile">
           <img src={Profile} alt="Profile Bernardo" />
         </div>
@@ -102,7 +108,7 @@ const About = () => {
             <li>Javascript, React.js</li>
           </ul>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
