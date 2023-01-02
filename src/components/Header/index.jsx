@@ -43,8 +43,7 @@ const Header = () => {
       </header>
 
       <div className="menu-mobile">
-        <div>
-          {" "}
+        <div className="menu-mobile-img">
           <img
             src="https://icongr.am/material/close.svg?size=32&color=ffffff"
             alt=""
@@ -53,19 +52,19 @@ const Header = () => {
         </div>
         <ul>
           <Link className="links" to="/">
-            <li>Home</li>
+            <li id="home">Home</li>
           </Link>
 
           <Link className="links" to="/about">
-            <li>About</li>
+            <li id="about">About</li>
           </Link>
 
           <Link className="links" to="/projects">
-            <li>Projects</li>
+            <li id="project">Projects</li>
           </Link>
 
           <Link className="links" to="/tools">
-            <li>Tools</li>
+            <li id="tool">Tools</li>
           </Link>
         </ul>
       </div>
