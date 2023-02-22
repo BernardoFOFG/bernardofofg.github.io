@@ -1,15 +1,19 @@
 header {
   display: flex;
   justify-content: space-between;
+  item-align: center;
 
   height: 72px;
-
-  border-bottom: 1px solid #242424;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  border-bottom: 1px solid #242424;
+  z-indeX: 10;
+  background-color: #111111;
+
 
   width: 100vw;
   padding: 0px 16px;
@@ -38,6 +42,7 @@ nav .links:hover {
 nav img {
   width: 72px;
   height: 72px;
+  padding-top: 8px;
 }
 .img-toggle img {
   width: 32px;

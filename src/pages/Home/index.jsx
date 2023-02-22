@@ -3,7 +3,7 @@ import "./Home.css";
 
 import SocialMedia from "../../components/Home/Social.jsx";
 import NewProjects from "../../components/Home/NewProjects.jsx";
-import IacLogo from '../../images/Logo_IAC.svg'
+import noLogo from '../../images/no-logo.png'
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -53,10 +53,11 @@ const Home = () => {
           </p>
 
           <NewProjects
-            link="https://github.com/suelensalvino/IAC"
-            img={<img src={IacLogo} alt="noLogo" />}
-            titleinfo="IFPE Acess Control(IAC)"
-            subtitleinfo="Project that will be developed during the second period in the course of Project and Development I."
+            link="https://github.com/BernardoFOFG/WebUdemy"
+            img={<img src={noLogo} alt="noLogo" />}
+            titleinfo="Acquiring knowledge..."
+            subtitleinfo="
+            At the moment I'm focusing on finishing my course on udemy, as college is close to returning, and it will be a difficult period."
           />
         </section>
       </motion.main>

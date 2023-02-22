@@ -25,24 +25,20 @@ export default function navMobile() {
     menuMobile.style.display = "none";
     corpo.style.overflowY = "auto";
     menuMobile.style.overflowY = "auto";
-    console.log("aa");
   });
   about.addEventListener("click", () => {
     menuMobile.style.display = "none";
     corpo.style.overflowY = "auto";
     menuMobile.style.overflowY = "auto";
-    console.log("aa");
   });
   project.addEventListener("click", () => {
     menuMobile.style.display = "none";
     corpo.style.overflowY = "auto";
     menuMobile.style.overflowY = "auto";
-    console.log("aa");
   });
   tool.addEventListener("click", () => {
     menuMobile.style.display = "none";
     corpo.style.overflowY = "auto";
     menuMobile.style.overflowY = "auto";
-    console.log("aa");
   });
 }
