@@ -48,6 +48,7 @@
 @media (max-width: 1024px) {
   .container_home {
     margin: 40px auto;
+    align-items: center;
   }
   .first_floor h1 {
     font-size: 3.1rem;
@@ -87,10 +88,12 @@
     width: 425px;
   }
   .first_floor {
-    margin: 20px 40px;
+    margin: 20px auto;
+    padding: 0px 20px;
   }
   .second_floor {
-    margin: 0 40px 40px 40px;
+    margin: 20px auto;
+    padding: 0px 20px;
   }
   .custom-shape-divider-top-1664262103 {
     display: none;
