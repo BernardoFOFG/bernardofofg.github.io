@@ -4,7 +4,8 @@ import "./About.css";
 
 import Linha from "../../components/Linha/index.jsx";
 import Profile from "../../images/Profile-Bernardo.jpg";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import Jobs from "../../components/About/Jobs";
 
 const About = () => {
   return (
@@ -61,21 +62,12 @@ const About = () => {
             <h4>Work</h4>
           </div>
           <div className="work_descriptions">
-            <div className="work_descriptions_place">
-              <ul>
-                <li>MSport</li>
-              </ul>
-            </div>
-            <div className="work_descriptions_job">
-              <ul>
-                <li>Administrative Assistant</li>
-              </ul>
-              <div>
-                <ul>
-                  <li>2021 - 2022</li>
-                </ul>
-              </div>
-            </div>
+            <Jobs
+              title="MSport"
+              cargo="Administrative Assistant"
+              periodo="2021 - 2022"
+            />
+            <Jobs title="EMPREL" cargo="Development Intern" periodo="2023" />
           </div>
         </div>
         <Linha />

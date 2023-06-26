@@ -37,6 +37,7 @@
 }
 .work_descriptions {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 .work_descriptions_place {

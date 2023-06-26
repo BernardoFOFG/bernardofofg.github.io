@@ -5,18 +5,17 @@ import Linha from "../Linha/index.jsx";
 function CompProjects(props) {
   return (
     <div className="project_presentation">
-      {/* Sudoku */}
       <div className="project_presentation_card_description">
         <h4>{props.title}</h4>
         <p>{props.description}</p>
         <p>{props.technologies}</p>
         <div className="project_presentation_anchor">
-          <a href={props.link} target="_blank" rel="noreferrer">
-            {props.linkTitle}
+          <a href={props?.link} target="_blank" rel="noreferrer">
+            {props?.linkTitle}
           </a>
-            <a href={props.linkRepo} target="_blank" rel="noreferrer">
-              {props.linkTitleRepo}
-            </a>
+          <a href={props.linkRepo} target="_blank" rel="noreferrer">
+            {props.linkTitleRepo}
+          </a>
         </div>
       </div>
       <div className="project_presentation_card">

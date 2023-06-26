@@ -25,7 +25,7 @@
 .project_presentation_anchor {
   display: flex;
   gap: 32px;
-  margin: 64px 0;
+  margin: 32px 0;
 }
 .project_presentation_anchor a {
   min-height: 40px;

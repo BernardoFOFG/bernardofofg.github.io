@@ -52,12 +52,23 @@ const Projects = () => {
           description="Project created for the web development course."
           technologies="Technologies used: HTML, CSS, Javascript, Svelte, TailwindCSS, PHP,
         MySQL."
-          link="https://projeto-sudoku-ifpe.vercel.app/"
-          linkTitle="Go to IAC"
+          linkTitle="#"
           linkRepo="https://github.com/suelensalvino/iac"
           linkTitleRepo="Go to Repository IAC"
           projectPhoto={IAC}
           projectDescription="Project Access Control"
+        />
+        <CompProjects
+          title="NLW Setup"
+          description="
+          Project finalized during the event offered by rocketseat, this project helped me kick off 2023, and start the year immersed in programming."
+          technologies="Technologies used: HTML5, CSS3, TailwindCSS, Javascript, Typescript, React.JS, Node.js, ReactNative, Expo, Fastify, Axios, Prisma, SQlite, Figma."
+          link="#"
+          linkTitle="#"
+          linkRepo="https://github.com/BernardoFOFG/NLW-Setup"
+          linkTitleRepo="Go to Repository NLW Setup"
+          projectPhoto={Setup}
+          projectDescription="NLW Setup"
         />
         <CompProjects
           title="User Search"
@@ -93,7 +104,6 @@ const Projects = () => {
           projectPhoto={Cronometro}
           projectDescription="Project Stopwatch"
         />
-
         <CompProjects
           title="NLW Heat"
           description="Event offered by rocketseat for programming students, and the
@@ -106,18 +116,6 @@ const Projects = () => {
           linkTitleRepo="Go to Repository Crach"
           projectPhoto={Cracha}
           projectDescription="NLW Heat"
-        />
-        <CompProjects
-          title="NLW Setup"
-          description="
-        Project finalized during the event offered by rocketseat, this project helped me kick off 2023, and start the year immersed in programming."
-          technologies="Technologies used: HTML5, CSS3, TailwindCSS, Javascript, Typescript, React.JS, Node.js, ReactNative, Expo, Fastify, Axios, Prisma, SQlite, Figma."
-          link="#"
-          linkTitle="#"
-          linkRepo="https://github.com/BernardoFOFG/NLW-Setup"
-          linkTitleRepo="Go to Repository NLW Setup"
-          projectPhoto={Setup}
-          projectDescription="NLW Setup"
         />
       </motion.main>
     </>

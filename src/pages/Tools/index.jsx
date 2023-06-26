@@ -57,6 +57,21 @@ const Tools = () => {
                 alt="Typescript Logo"
                 nome="Typescript"
               />
+              <Card
+                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                alt="TailwindCSS Logo"
+                nome="TailwindCSS"
+              />
+              <Card
+                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                alt="Bootstrap Original Logo"
+                nome="Bootstrap"
+              />
+              <Card
+                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
+                alt="jQuery Logo"
+                nome="jQuery"
+              />
             </div>
           </div>
           <div className="tools_languages">
@@ -86,6 +101,11 @@ const Tools = () => {
                 img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"
                 alt="Laravel Logo"
                 nome="Laravel"
+              />
+              <Card
+                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg"
+                alt="Symfony Logo"
+                nome="Symfony"
               />
             </div>
           </div>
@@ -121,16 +141,6 @@ const Tools = () => {
               <p>Some extra knowledge tools.</p>
             </div>
             <div className="tools_cardGroup">
-              <Card
-                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-                alt="TailwindCSS Logo"
-                nome="TailwindCSS"
-              />
-              <Card
-                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-                alt="Bootstrap Original Logo"
-                nome="Bootstrap"
-              />
               <Card
                 img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
                 alt="Git Logo"

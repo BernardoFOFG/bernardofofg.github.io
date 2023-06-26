@@ -3,15 +3,20 @@ import "./Home.css";
 
 import SocialMedia from "../../components/Home/Social.jsx";
 import NewProjects from "../../components/Home/NewProjects.jsx";
-import noLogo from '../../images/no-logo.png'
+import noLogo from "../../images/no-logo.png";
+import LogoGym from "../../images/logoGymEasy.svg";
 import { motion } from "framer-motion";
+import Seta from "../../components/Home/Seta";
 
 const Home = () => {
   return (
     <>
-      <motion.main className="container_home"  intial={{ opacity: 0 }}
+      <motion.main
+        className="container_home"
+        intial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}>
+        exit={{ opacity: 0 }}
+      >
         <section className="first_floor">
           <h1>Front-end developer in constant evolution and learning!</h1>
           <div className="first_floor_infos">
@@ -32,17 +37,7 @@ const Home = () => {
         </section>
 
         <div class="custom-shape-divider-top-1664262103">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M649.97 0L550.03 0 599.91 54.12 649.97 0z"
-              class="shape-fill"
-            ></path>
-          </svg>
+          <Seta />
         </div>
 
         <section className="second_floor">
@@ -53,11 +48,19 @@ const Home = () => {
           </p>
 
           <NewProjects
-            link="https://github.com/BernardoFOFG/WebUdemy"
-            img={<img src={noLogo} alt="noLogo" />}
+            // Se não houver projetos ativos
+            /* link="https://github.com/BernardoFOFG/WebUdemy"
+            img={noLogo}
+            alt="noLogo" 
             titleinfo="Acquiring knowledge..."
             subtitleinfo="
             At the moment I'm focusing on finishing my course on udemy, as college is close to returning, and it will be a difficult period."
+            */
+            link="https://github.com/BernardoFOFG/Gym-Easy"
+            img={LogoGym}
+            alt="Logo Gym-Easy"
+            titleinfo="Gym-Easy(Gym-e)"
+            subtitleinfo="Project that will be developed in the second period of the course of Project and Development II."
           />
         </section>
       </motion.main>
