@@ -62,7 +62,7 @@
 }
 .tools_card_img img {
   margin: 0 auto;
-  max-width: 80px;
+  width: 80px;
   border-radius: 16px;
   filter: brightness(0.8) contrast(1.2);
 }

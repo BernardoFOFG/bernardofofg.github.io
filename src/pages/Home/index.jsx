@@ -4,7 +4,6 @@ import "./Home.css";
 import SocialMedia from "../../components/Home/Social.jsx";
 import NewProjects from "../../components/Home/NewProjects.jsx";
 import noLogo from "../../images/no-logo.png";
-import LogoGym from "../../images/logoGymEasy.svg";
 import { motion } from "framer-motion";
 import Seta from "../../components/Home/Seta";
 
@@ -49,18 +48,12 @@ const Home = () => {
 
           <NewProjects
             // Se não houver projetos ativos
-            /* link="https://github.com/BernardoFOFG/WebUdemy"
+            link="https://github.com/BernardoFOFG/WebUdemy"
             img={noLogo}
-            alt="noLogo" 
+            alt="noLogo"
             titleinfo="Acquiring knowledge..."
             subtitleinfo="
             At the moment I'm focusing on finishing my course on udemy, as college is close to returning, and it will be a difficult period."
-            */
-            link="https://github.com/BernardoFOFG/Gym-Easy"
-            img={LogoGym}
-            alt="Logo Gym-Easy"
-            titleinfo="Gym-Easy(Gym-e)"
-            subtitleinfo="Project that will be developed in the second period of the course of Project and Development II."
           />
         </section>
       </motion.main>
