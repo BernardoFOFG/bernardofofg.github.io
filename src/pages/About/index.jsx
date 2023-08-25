@@ -67,7 +67,8 @@ const About = () => {
               cargo="Administrative Assistant"
               periodo="2021 - 2022"
             />
-            <Jobs title="EMPREL" cargo="Development Intern" periodo="2023" />
+            <Jobs title="EMPREL" cargo="Development Intern" periodo="2023 - 2023" />
+            <Jobs title="NETec Intermediações" cargo="Development Front-end" periodo="2023" />
           </div>
         </div>
         <Linha />
