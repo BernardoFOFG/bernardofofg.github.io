@@ -23,6 +23,7 @@ nav ul {
   list-style: none;
   align-items: center;
   margin-right: 20px;
+  gap: 8px;
 }
 nav li {
   padding: 0px 24px;
@@ -32,11 +33,10 @@ nav .links {
   color: #f69999;
 }
 nav .links:hover {
-  color: #f05353;
-  font-weight: bold;
-  background: #2e2e2e;
+  border-bottom: 2px solid #f05353;
+  transition: .7s all ease;
+
   padding: 8px 0px;
-  border-radius: 0.2rem;
 }
 nav img {
   width: 72px;
@@ -53,8 +53,6 @@ nav img {
 .menu-mobile {
   display: none;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100vw;
   height: 100vh;
 
@@ -67,22 +65,31 @@ nav img {
 }
 .menu-mobile-img {
   width: 100%;
-  margin-right: 64 px;
-  text-align: right;
+  margin-left: 24px;
+  margin-top: 48px;
 }
 .menu-mobile ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #f05353;
   gap: 32px;
-  width: 100%;
+  width: 80%;
+  padding: 16px;
 }
 .menu-mobile li {
-  color: #f05353;
   font-size: 24px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px solid #f05353;
+  padding-bottom: 4px;
+  width: 55%;
+}
+
+.links.selectAtived {
+  border-bottom: 2px solid #f05353;
+  font-weight: bold;
+  color: #f05353;
+  padding: 8px 0px;
+}
+.links:not(.links.selectAtived) {
+  color: gray;
 }
 @media (max-width: 767px) {
   header > nav > a {

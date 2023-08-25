@@ -10,9 +10,12 @@ function CompProjects(props) {
         <p>{props.description}</p>
         <p>{props.technologies}</p>
         <div className="project_presentation_anchor">
-          <a href={props?.link} target="_blank" rel="noreferrer">
-            {props?.linkTitle}
-          </a>
+          {props.link && (
+            <a href={props?.link} target="_blank" rel="noreferrer">
+              {props?.linkTitle}
+            </a>
+          )}
+
           <a href={props.linkRepo} target="_blank" rel="noreferrer">
             {props.linkTitleRepo}
           </a>

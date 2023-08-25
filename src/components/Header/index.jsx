@@ -1,14 +1,18 @@
 /* eslint-disable react/jsx-no-undef */
-import React from "react";
+import React, { useState } from "react";
 
 import "./Header.css";
 
 import imgLogo from "../../images/logo.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import navMobile from "./main.js";
 
 const Header = () => {
+  const [activeLink, setActiveLink] = useState("home");
+  const handleNavLinkClick = (link) => {
+    setActiveLink(link);
+  };
   return (
     <>
       <header>
@@ -17,21 +21,43 @@ const Header = () => {
             <img src={imgLogo} alt="Imagem Logo" />
           </Link>
           <ul className="menu-desktop">
-            <Link className="links" to="/">
+            <NavLink
+              className={`links ${activeLink === "home" ? "selectAtived" : ""}`}
+              to="/"
+              onClick={() => handleNavLinkClick("home")}
+            >
               <li>Home</li>
-            </Link>
+            </NavLink>
 
-            <Link className="links" to="/about">
+            <NavLink
+              className={`links ${
+                activeLink === "about" ? "selectAtived" : ""
+              }`}
+              to="/about"
+              onClick={() => handleNavLinkClick("about")}
+            >
               <li>About</li>
-            </Link>
+            </NavLink>
 
-            <Link className="links" to="/projects">
+            <NavLink
+              className={`links ${
+                activeLink === "projects" ? "selectAtived" : ""
+              }`}
+              to="/projects"
+              onClick={() => handleNavLinkClick("projects")}
+            >
               <li>Projects</li>
-            </Link>
+            </NavLink>
 
-            <Link className="links" to="/tools">
+            <NavLink
+              className={`links ${
+                activeLink === "tools" ? "selectAtived" : ""
+              }`}
+              to="/tools"
+              onClick={() => handleNavLinkClick("tools")}
+            >
               <li>Tools</li>
-            </Link>
+            </NavLink>
           </ul>
           <div className="img-toggle" onClick={navMobile}>
             <img
