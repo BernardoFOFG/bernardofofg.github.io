@@ -6,13 +6,15 @@ import Linha from "../../components/Linha/index.jsx";
 import Profile from "../../images/Profile-Bernardo.jpg";
 import { motion } from "framer-motion";
 import Jobs from "../../components/About/Jobs";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <>
       <motion.div
         className="container_about"
-        intial={{ opacity: 0 }}
+        initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
@@ -20,85 +22,61 @@ const About = () => {
           <img src={Profile} alt="Profile Bernardo" />
         </div>
         <div className="profile_text">
+          <p>{t('about.introduction')}</p>
           <p>
-            Hello, I'm Bernardo, and I'm Brazilian, currently I'm a front-end
-            developer, with specialization in the area of ​​user interface, web
-            applications and the like, but in the future I intend to fit in the
-            position of full-stack developer, because I want to become a
-            professional able to work in any development sector, which is my
-            passion.
+            {t('about.start')}
           </p>
           <p>
-            I started my professional life as an administrative assistant, but
-            as soon as I entered development in 2019, I fell in love and fell
-            head over heels
+            {t('about.focus')}
           </p>
           <p>
-            I took my problems slowly in the studies of the pillars of web
-            programming, which were: HTML5, CSS3, and JavaScript. Unfortunately
-            in 2021 I had to leave the development area a little because of the
-            financial condition, and I was stopped for almost eight months, but
-            now and then training HTML and CSS.
-          </p>
-          <p>
-            However, my focus with development really changed at the end of
-            2021, when I really decided that I would respect my time and really
-            study what I wanted to follow in my life and definitely fall back
-            into the area of ​​development, I went back to studying Javascript,
-            but this time with a correct study plan, and I gradually got to know
-            the area, digital education institutions, online courses and the
-            like, it was a huge boost, and at the beginning of 2022 I entered
-            the Faculty of Internet System at the Federal Institute from
-            Pernambuco, and it's been a very incredible experience to meet
-            people from my area and others, exchange knowledge, solutions, the
-            college has taught me a lot about the concept of networking, and
-            makes me stick to my goals.
+            {t('about.trajectory')}
           </p>
         </div>
         <Linha />
 
         <div className="work">
           <div className="work_title">
-            <h4>Work</h4>
+            <h4>{t('about.work.title')}</h4>
           </div>
           <div className="work_descriptions">
             <Jobs
               title="MSport"
-              cargo="Administrative Assistant"
+              cargo={t('about.work.firstJob')}
               periodo="2021 - 2022"
             />
-            <Jobs title="EMPREL" cargo="Development Intern" periodo="2023 - 2023" />
-            <Jobs title="NETec Intermediações" cargo="Development Front-end" periodo="2023" />
+            <Jobs title="EMPREL" cargo={t('about.work.secondJob')} periodo="2023 - 2023" />
+            <Jobs title="NETec Intermediações" cargo={t('about.work.thirdJob')} periodo="2023~ " />
           </div>
         </div>
         <Linha />
         <div className="extras">
-          <h4>About this site</h4>
-          <p>This site was developed with expertise in: </p>
+          <h4>{t('about.extras.thisSite')}</h4>
+          <p>{t('about.extras.siteDescription')}</p>
           <ul>
             <li>
-              Intense{" "}
+              {t('about.extras.intenseSearching')}{" "}
               <a href="https://www.dribbble.com" target="_blank">
-                dribble
+                dribbble
               </a>{" "}
-              searching for inspiration
+              {t('about.extras.searchingForInspiration')}
             </li>
             <li>
-              Research for understanding{" "}
+              {t('about.extras.researchForUnderstanding')}{" "}
               <a href="https://reactrouter.com/en/main" target="_blank">
                 React Routers
               </a>
             </li>
             <li>
-              Using webpack
+              {t('about.extras.usingWebpack')}{" "}
               <a href="https://babeljs.io/" target="_blank">
                 (babel)
               </a>{" "}
-              for the first time
+              {t('about.extras.forTheFirstTime')}
             </li>
-            <li>Knowledge of how the web works;</li>
-            <li>HTML, CSS, Animation CSS</li>
-            <li>Javascript, React.js</li>
+            <li>{t('about.extras.knowledgeOfHowTheWebWorks')}</li>
+            <li>{t('about.extras.skills')}</li>
+            <li>{t('about.extras.javascriptReact')}</li>
           </ul>
         </div>
       </motion.div>
