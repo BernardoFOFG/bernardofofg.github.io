@@ -8,7 +8,7 @@
 
 .first_floor h1 {
   font-size: 3.5rem;
-  font-height: 700;
+  font-weight: 700;
   text-decoration: underline;
 
   color: #f05353;
@@ -90,6 +90,9 @@
   .first_floor {
     margin: 20px auto;
     padding: 0px 20px;
+  }
+  .first_floor h1 {
+    font-size: 2.5rem;
   }
   .second_floor {
     margin: 20px auto;

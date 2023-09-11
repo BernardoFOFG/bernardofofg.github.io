@@ -1,14 +1,14 @@
 header {
   display: flex;
   justify-content: space-between;
-  item-align: center;
-
+  align-items: center;
   height: 72px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   border-bottom: 1px solid #242424;
   z-index: 10;
@@ -17,6 +17,7 @@ nav {
   width: 100vw;
   padding: 0px 16px;
 }
+
 nav ul {
   display: flex;
 
@@ -25,31 +26,62 @@ nav ul {
   margin-right: 20px;
   gap: 8px;
 }
+
 nav li {
   padding: 0px 24px;
 }
+
 nav .links {
   text-decoration: none;
   color: #f69999;
 }
+
 nav .links:hover {
   border-bottom: 2px solid #f05353;
   transition: .7s all ease;
 
   padding: 8px 0px;
 }
+
 nav img {
   width: 72px;
   height: 72px;
   padding-top: 8px;
 }
+
+nav>div {
+  display: flex;
+  gap: 16px;
+}
+
+.button-flag {
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.button-flag:hover {
+  scale: 115%;
+}
+
+.button-flag img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
 .img-toggle img {
   width: 32px;
   height: 32px;
 }
+
 .img-toggle {
   display: none;
 }
+
 .menu-mobile {
   display: none;
   flex-direction: column;
@@ -63,11 +95,13 @@ nav img {
   overflow-x: hidden;
   gap: 16px;
 }
+
 .menu-mobile-img {
   width: 100%;
   margin-left: 24px;
   margin-top: 48px;
 }
+
 .menu-mobile ul {
   display: flex;
   flex-direction: column;
@@ -75,11 +109,34 @@ nav img {
   width: 80%;
   padding: 16px;
 }
+
 .menu-mobile li {
   font-size: 24px;
   border-bottom: 2px solid #f05353;
   padding-bottom: 4px;
   width: 55%;
+}
+
+.mobile-flag {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  width: 100%;
+  gap: 4px;
+  margin-bottom: 48px;
+  flex-direction: column;
+  color: white;
+}
+
+.mobile-flag > div {
+  display: flex;
+  gap: 32px;
+}
+
+.mobile-flag img {
+  width: 64px;
+  height: 64px;
 }
 
 .links.selectAtived {
@@ -88,24 +145,34 @@ nav img {
   color: #f05353;
   padding: 8px 0px;
 }
+
 .links:not(.links.selectAtived) {
   color: gray;
 }
+
 @media (max-width: 767px) {
-  header > nav > a {
+  header>nav>a {
     display: flex;
   }
+
   nav {
     padding: 0 16px;
     justify-content: space-between;
     align-items: center;
   }
+
   nav ul {
     margin-right: 0;
   }
+
+  nav > div {
+    display: none;
+  }
+
   .menu-desktop {
     display: none;
   }
+
   .img-toggle {
     display: flex;
   }

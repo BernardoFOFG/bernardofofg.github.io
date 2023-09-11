@@ -9,12 +9,22 @@ import { Link, NavLink } from "react-router-dom";
 import navMobile from "./main.js";
 import { useTranslation } from "react-i18next";
 
+import Brazil from '../../images/brazil.png'
+import USA from '../../images/usa.png'
+import Spain from '../../images/spain.png'
+
 const Header = () => {
   const [activeLink, setActiveLink] = useState("home");
+  const { t, i18n } = useTranslation();
+
   const handleNavLinkClick = (link) => {
     setActiveLink(link);
   };
-  const { t } = useTranslation() 
+
+  const changeLanguageHandler = (lang) => {
+    i18n.changeLanguage(lang)
+  }
+
   return (
     <>
       <header>
@@ -22,6 +32,13 @@ const Header = () => {
           <Link to="/">
             <img src={imgLogo} alt="Imagem Logo" />
           </Link>
+
+          <div>
+            <button className="button-flag" onClick={() => changeLanguageHandler('pt')}><img src={Brazil} /></button>
+            <button className="button-flag" onClick={() => changeLanguageHandler('en')}><img src={USA} /></button>
+            <button className="button-flag" onClick={() => changeLanguageHandler('es')}><img src={Spain} /></button>
+          </div>
+
           <ul className="menu-desktop">
             <NavLink
               className={`links ${activeLink === "home" ? "selectAtived" : ""}`}
@@ -32,9 +49,8 @@ const Header = () => {
             </NavLink>
 
             <NavLink
-              className={`links ${
-                activeLink === "about" ? "selectAtived" : ""
-              }`}
+              className={`links ${activeLink === "about" ? "selectAtived" : ""
+                }`}
               to="/about"
               onClick={() => handleNavLinkClick("about")}
             >
@@ -42,9 +58,8 @@ const Header = () => {
             </NavLink>
 
             <NavLink
-              className={`links ${
-                activeLink === "projects" ? "selectAtived" : ""
-              }`}
+              className={`links ${activeLink === "projects" ? "selectAtived" : ""
+                }`}
               to="/projects"
               onClick={() => handleNavLinkClick("projects")}
             >
@@ -52,9 +67,8 @@ const Header = () => {
             </NavLink>
 
             <NavLink
-              className={`links ${
-                activeLink === "tools" ? "selectAtived" : ""
-              }`}
+              className={`links ${activeLink === "tools" ? "selectAtived" : ""
+                }`}
               to="/tools"
               onClick={() => handleNavLinkClick("tools")}
             >
@@ -69,6 +83,7 @@ const Header = () => {
           </div>
         </nav>
       </header>
+
 
       <div className="menu-mobile">
         <div className="menu-mobile-img">
@@ -95,6 +110,15 @@ const Header = () => {
             <li id="tool">{t('header.tools')}</li>
           </Link>
         </ul>
+
+        <div className="mobile-flag">
+          <h4>Selecione seu idioma</h4>
+          <div>
+            <button className="button-flag" onClick={() => changeLanguageHandler('pt')}><img src={Brazil} /></button>
+            <button className="button-flag" onClick={() => changeLanguageHandler('en')}><img src={USA} /></button>
+            <button className="button-flag" onClick={() => changeLanguageHandler('es')}><img src={Spain} /></button>
+          </div>
+        </div>
       </div>
     </>
   );
