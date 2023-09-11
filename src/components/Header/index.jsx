@@ -7,12 +7,14 @@ import imgLogo from "../../images/logo.png";
 import { Link, NavLink } from "react-router-dom";
 
 import navMobile from "./main.js";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("home");
   const handleNavLinkClick = (link) => {
     setActiveLink(link);
   };
+  const { t } = useTranslation() 
   return (
     <>
       <header>
@@ -26,7 +28,7 @@ const Header = () => {
               to="/"
               onClick={() => handleNavLinkClick("home")}
             >
-              <li>Home</li>
+              <li>{t('header.home')}</li>
             </NavLink>
 
             <NavLink
@@ -36,7 +38,7 @@ const Header = () => {
               to="/about"
               onClick={() => handleNavLinkClick("about")}
             >
-              <li>About</li>
+              <li>{t('header.about')}</li>
             </NavLink>
 
             <NavLink
@@ -46,7 +48,7 @@ const Header = () => {
               to="/projects"
               onClick={() => handleNavLinkClick("projects")}
             >
-              <li>Projects</li>
+              <li>{t('header.projects')}</li>
             </NavLink>
 
             <NavLink
@@ -56,7 +58,7 @@ const Header = () => {
               to="/tools"
               onClick={() => handleNavLinkClick("tools")}
             >
-              <li>Tools</li>
+              <li>{t('header.tools')}</li>
             </NavLink>
           </ul>
           <div className="img-toggle" onClick={navMobile}>
@@ -78,19 +80,19 @@ const Header = () => {
         </div>
         <ul>
           <Link className="links" to="/">
-            <li id="home">Home</li>
+            <li id="home">{t('header.home')}</li>
           </Link>
 
           <Link className="links" to="/about">
-            <li id="about">About</li>
+            <li id="about">{t('header.about')}</li>
           </Link>
 
           <Link className="links" to="/projects">
-            <li id="project">Projects</li>
+            <li id="project">{t('header.projects')}</li>
           </Link>
 
           <Link className="links" to="/tools">
-            <li id="tool">Tools</li>
+            <li id="tool">{t('header.tools')}</li>
           </Link>
         </ul>
       </div>

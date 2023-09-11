@@ -7,6 +7,12 @@ i18n
     resources: {
       en: {
         translation: {
+          header: {
+            home: "Home",
+            about: "About",
+            projects: "Projects",
+            tools: "Tools",
+          },
           about: {
             introduction: "Hello, I'm Bernardo, and I'm Brazilian, currently I'm a front-end developer, with specialization in the area of ​​user interface, web applications and the like, but in the future I intend to fit in the position of full- stack developer, because I want to become a professional able to work in any development sector, which is my passion.",
             start: "I started my professional life as an administrative assistant, butas soon as I entered development in 2019, I flove and fellhead over heels..",
@@ -72,6 +78,12 @@ i18n
       },
       pt: {
         translation: {
+          header: {
+            home: "Inicio",
+            about: "Sobre",
+            projects: "Projetos",
+            tools: "Ferramentas",
+          },
           about: {
             introduction: "Olá, meu nome é Bernardo, e sou brasileiro, atualmente sou desenvolvedor front-end, com especialização na área de interface de usuário, web aplicações e afins, mas no futuro pretendo me enquadrar na posição de desenvolvedor full stack, pois quero me tornar um profissional capaz de atuar em qualquer setor de desenvolvimento, que é minha paixão.",
             start: "Comecei minha vida profissional como auxiliar administrativo, mas assim que entrei no desenvolvimento em 2019, me apaixonei e caí de cabeça.",
@@ -137,6 +149,12 @@ i18n
       },
       es: {
         translation: {
+          header: {
+            home: "Hogar",
+            about: "Sobre",
+            projects: "Proyectos",
+            tools: "Herramientas",
+          },
           about: {
             introduction: "Hola, mi nombre es Bernardo, soy brasileño, actualmente soy front-end desarrollador, con especialización en el área de interfaz de usuario, web aplicaciones y propósitos, pero en el futuro tengo la intención de encajar en el Puesto de desarrollador full stack, ya que quiero convertirme en un profesional capaz de trabajar en cualquier sector del desarrollo, que es mi pasión.",
             start: "Comencé mi vida profesional como asistente administrativo, pero apenas entré en desarrollo en 2019, me enamoré y me enamoré perdidamente.",
