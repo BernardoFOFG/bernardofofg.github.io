@@ -6,8 +6,10 @@ import NewProjects from "../../components/Home/NewProjects.jsx";
 import noLogo from "../../images/no-logo.png";
 import { motion } from "framer-motion";
 import Seta from "../../components/Home/Seta";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const { t } = useTranslation()
   return (
     <>
       <motion.main
@@ -17,19 +19,13 @@ const Home = () => {
         exit={{ opacity: 0 }}
       >
         <section className="first_floor">
-          <h1>Front-end developer in constant evolution and learning!</h1>
+          <h1>{t('home.title')}</h1>
           <div className="first_floor_infos">
             <p>
-              Hello, my name is Bernardo Filipe, and I'm a front-end developer
-              in learning, and I've been studying to become a developer since
-              2020... the first two years were just individual studies, and in
-              the last year (2022) I entered college and I'm boosting my
-              studies.
+              {t('home.info')}
             </p>
             <p>
-              Currently I'm focusing my studies on the Javascript language, and
-              its frameworks, but with an emphasis on React.js, but I also have
-              knowledge with Svelte.
+              {t('home.study')}
             </p>
           </div>
           <SocialMedia />
@@ -40,10 +36,9 @@ const Home = () => {
         </div>
 
         <section className="second_floor">
-          <h2>Future Projects</h2>
+          <h2>{t("home.secondFloor.title")}</h2>
           <p>
-            Upcoming projects that will probably be inserted here as soon as
-            they are finished!
+          {t("home.secondFloor.subTitle")}
           </p>
 
           <NewProjects
@@ -51,9 +46,8 @@ const Home = () => {
             link="https://github.com/BernardoFOFG/WebUdemy"
             img={noLogo}
             alt="noLogo"
-            titleinfo="Acquiring knowledge..."
-            subtitleinfo="
-            At the moment I'm focusing on finishing my course on udemy, as college is close to returning, and it will be a difficult period."
+            titleinfo={t('home.nextProjects.title')}
+            subtitleinfo={t('home.nextProjects.subTitle')}
           />
         </section>
       </motion.main>

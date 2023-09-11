@@ -31,7 +31,43 @@ i18n
               javascriptReact: 'Javascript, React.js',
             }
           },
-
+          home: {
+            title: "Front-end developer in constant evolution and learning!",
+            info: "Hello, I'm Bernardo Filipe, a front-end developer, and I started my journey as a developer in 2020. During the first two years, I mainly dedicated myself to self-study, and in the last year (2022), I took a step further by joining at college, where I am intensifying my studies. Now, in 2023, I am an entrepreneur in the job market as a front-end developer, applying my practical knowledge and improving my skills.",
+            study: "Currently, I am focusing my studies on improving my knowledge of advanced React.js topics, including integration with TypeScript, developing component libraries, and using interface styling libraries.",
+            secondFloor: {
+              title: "Future Projects",
+              subTitle: "Upcoming projects that will probably be inserted here as soon as they are finished!",
+            },
+            nextProjects: {
+              title: "Acquiring knowledge...",
+              subTitle: "At the moment, I am focusing on completing my course at Rocketseat and deepening my knowledge in development. I am also beginning to study Angular.",
+            }
+          },
+          social: {
+            email: 'Email me'
+          },
+          projects: {
+            title: "Projects",
+            subTitle: "These are some of the sites developed for individual knowledge, unfortunately some have very introductory technology, but little by little I will insert my evolution with new technologies and using more resources.",
+            translation: "en",
+          },
+          tools: {
+            title: "Tools",
+            subTitle: "The main programming languages ​​and tools I use on a daily basis.",
+            frontEnd: {
+              subTitle: "My main stack, and where my main knowledge is.",
+            },
+            backEnd: {
+              subTitle: "Here are my back-end knowledge, which are few, but it's always good to highlight them.",
+            },
+            codeEditor: {
+              subTitle: "Code editors I have knowledge of.",
+            },
+            extras: {
+              subTitle: "Some extra knowledge tools.",
+            }
+          }
         }
       },
       pt: {
@@ -60,7 +96,43 @@ i18n
               javascriptReact: 'Javascript, React.js',
             }
           },
-
+          home: {
+            title: "Desenvolvedor Front-end em constante evolução e aprendizado!",
+            info: "Olá, sou Bernardo Filipe, um desenvolvedor front-end, e comecei minha jornada como desenvolvedor em 2020. Durante os primeiros dois anos, dediquei-me principalmente ao estudo individual e, no último ano (2022), dei um passo adiante ao ingressar na faculdade, onde estou intensificando meus estudos. Agora, em 2023, estou empregado no mercado de trabalho como desenvolvedor front-end, aplicando meu conhecimento prático e aprimorando minhas habilidades.",
+            study: "Atualmente, estou concentrando meus estudos na melhoria dos meus conhecimentos em tópicos avançados de React.js, incluindo a integração com TypeScript, o desenvolvimento de bibliotecas de componentes e a utilização de bibliotecas de estilização de interfaces.",
+            secondFloor: {
+              title: "Futuro Projetos",
+              subTitle: "Próximos projetos que provavelmente serão inseridos aqui em breve eles terminaram!",
+            },
+            nextProjects: {
+              title: "Adquirindo conhecimento...",
+              subTitle: "Neste momento, estou aprimorando meus conhecimentos em React e TypeScript, além de dar os primeiros passos nos meus estudos sobre Angular. Estou empenhado em ampliar minha expertise nessas tecnologias de desenvolvimento web.",
+            }
+          },
+          social: {
+            email: 'Enviar email'
+          },
+          projects: {
+            title: "Projetos",
+            subTitle: "Esses são alguns dos sites desenvolvidos para conhecimento individual, infelizmente alguns possuem tecnologia bem introdutória, mas aos poucos irei inserindo minha evolução com novas tecnologias e utilizando mais recursos.",
+            translation: "pt",
+          },
+          tools: {
+            title: "Ferramentas",
+            subTitle: "As principais linguagens de programação e ferramentas que utilizo no dia a dia.",
+            frontEnd: {
+              subTitle: "Minha stack principal e onde está meu principal conhecimento.",
+            },
+            backEnd: {
+              subTitle: "Aqui estão meus conhecimentos de back-end, que são poucos, mas é sempre bom destacá-los.",
+            },
+            codeEditor: {
+              subTitle: "Editores de código que conheço.",
+            },
+            extras: {
+              subTitle: "Algumas ferramentas extras de conhecimento.",
+            }
+          }
         }
       },
       es: {
@@ -87,6 +159,43 @@ i18n
               knowledgeOfHowTheWebWorks: 'Conocimiento de cómo funciona la web',
               skills: 'HTML, CSS, Animación CSS',
               javascriptReact: 'Javascript, React.js',
+            }
+          },
+          home: {
+            title: "Desarrollador front-end en constante evolución y aprendizaje!",
+            info: "Hola, soy Bernardo Filipe, desarrollador front-end, y comencé mi andadura como desarrollador en 2020. Durante los dos primeros años me dediqué principalmente al autoestudio y en el último año (2022) Di un paso más al incorporarme a la universidad, donde estoy intensificando mis estudios. Ahora, en 2023, soy emprendedor en el mercado laboral como desarrollador front-end, aplicando mis conocimientos prácticos y mejorando mis habilidades.",
+            study: "Actualmente, estoy centrando mis estudios en mejorar mi conocimiento de temas avanzados de React.js, incluida la integración con TypeScript, el desarrollo de bibliotecas de componentes y el uso de bibliotecas de estilo de interfaz.",
+            secondFloor: {
+              title: "Proyectos futuros",
+              subTitle: "Próximos proyectos que probablemente se insertarán aquí tan pronto como ¡ellos terminaron!",
+            },
+            nextProjects: {
+              title: "Adquisición de conocimiento...",
+              subTitle: "En este momento, estoy concentrado en completar mi curso en Rocketseat y profundizar aún más mis conocimientos en desarrollo. También estoy comenzando a estudiar Angular.",
+            }
+          },
+          social: {
+            email: 'Enviar correo electrónico'
+          },
+          projects: {
+            title: "Proyectos",
+            subTitle: "Estos son algunos de los sitios desarrollados para el conocimiento individual, lamentablemente algunos tienen una tecnología muy introductoria, pero poco a poco iré insertando mi evolución con nuevas tecnologías y utilizando más recursos.",
+            translation: "es",
+          },
+          tools: {
+            title: "",
+            subTitle: "",
+            frontEnd: {
+              subTitle: "Mi pila principal y dónde está mi principal conocimiento.",
+            },
+            backEnd: {
+              subTitle: "Aquí están mis conocimientos de back-end, que son pocos, pero siempre es bueno resaltarlos.",
+            },
+            codeEditor: {
+              subTitle: "Editores de código que conozco.",
+            },
+            extras: {
+              subTitle: "Algunas herramientas de conocimiento adicionales.",
             }
           }
         }

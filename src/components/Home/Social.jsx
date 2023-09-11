@@ -4,9 +4,12 @@
 import React from "react";
 import "./Social.css";
 import Curriculo from "../../files/Bernardo_Filipe.pdf";
+import { useTranslation } from "react-i18next";
+
 
 // eslint-disable-next-line import/no-anonymous-default-export
 const Social = () => {
+  const { t } = useTranslation()
   return (
     <div className="social">
       <ul>
@@ -45,7 +48,7 @@ const Social = () => {
       </ul>
 
       <div className="toEmail">
-        <a href="mailto:bernardofofg@gmail.com">Email me</a>
+        <a href="mailto:bernardofofg@gmail.com">{t("social.email")}</a>
       </div>
     </div>
   );
